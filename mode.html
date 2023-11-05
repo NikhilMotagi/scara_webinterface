@@ -1,0 +1,92 @@
+<html>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Handy Thing</title>
+    <link rel="stylesheet" type="text/css" href="mode.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1><b>Handy Thing</b></h1>
+        <i>A Scara that does something more</i>
+    </div>
+    <div class="menu">
+        <h1>Welcome !</h1>       
+                
+        <div class="menu-button">
+            Modes:
+                <button id = "AutoButton" type = "button">Auto Mode</button>
+                <button id = "ManualButton" type = "button">Manual Mode</button>
+        </div>
+    </div>
+</body>
+<script>
+    var Manual = document.getElementById("ManualButton")
+    var Auto = document.getElementById("AutoButton")
+    Manual.onclick = function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET","/manual?",true);
+        xhr.send();
+        
+    }
+    Auto.onclick = function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET","/Auto?",true);
+        xhr.send();
+    }
+</script>
+<style>
+    body {
+        background-color: white;
+        display: grid;
+        align-items: center;
+        /* position: relative; */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Quicksand';
+    }
+
+    .header {
+        /* font-family: Papyrus; */
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        color: white;
+        padding: 0.5rem;
+        background-color: rgb(5, 57, 168);
+        font-size: small;
+    }
+
+    .header h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .menu {
+        /* outline: red solid; */
+        margin-top: 6rem;
+    }
+
+    .menu-button {
+        margin-top: 50px;
+        padding: 20px;
+        display: grid;
+        /* outline: black solid; */
+        background-color: rgb(146, 175, 238);
+        border-radius: 20px;
+        /* align-content: center; */
+    }
+
+    button {
+        /* outline: grey solid; */
+        font-family: 'Quicksand';
+        border-radius: 20px;
+        font-size: medium;
+        padding: 50px;
+        margin: 1rem;
+    }
+</style>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+    display: grid;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* font-size: 40px; */
+    color: white;
+    background-color: blue;
+    width: 100%;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.press {
+    margin-top: 10px;
+    /* margin-right: 24%; */
+    display: block;
+    outline: 1px solid black;
+}
+
+label {
+    margin: 10px;
+    padding: 30px;
+    font-size: 18px;
+}
+
+button {
+    /* position: relative; */
+    font-family: 'Quicksand';
+    font-size: large;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.navbutton{
+    display: block;
+    margin-top: 100px;
+}
+
+.home {
+    /* margin-top: 100px; */
+    margin-right: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+.stop{
+    /* margin-top: 100px; */
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    width: 150px;
+    height: 50px; 
+}
+
+.Engage {
+    background-color: red;
+    color: white;
+}
+
+.Engage :onclick {
+    background-color: green;
+    color: black;
+}

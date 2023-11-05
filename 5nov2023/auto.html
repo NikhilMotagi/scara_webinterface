@@ -1,0 +1,156 @@
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Handy Thing</title>
+        <link rel="stylesheet" type="text/css" href="auto.css">
+    </head>
+    <body>
+        <form>
+            <div class = "header"> Auto Mode</div>
+            <div class = "file-path">
+                <label>File Name:</label>
+                <input type="text" name="filename" required="" placeholder="File Name">
+                <button type="submit">Load</button>
+            </div>
+            <div class = "coordinate-input-table">
+                <table>
+                    <tr>
+                        <th> Sr No</th>
+                        <th> X </th>
+                        <th> Y </th>
+                        <th> Z </th>
+                    </tr>
+                    <tr>
+                        <td> 1.</td>
+                        <td> <input type="number" name="X1"></td>
+                        <td> <input type="number" name="Y1"></td>
+                        <td> <input type="number" name="Z1"></td>
+                    </tr>
+                    <tr>
+                        <td> 2.</td>
+                        <td> <input type="number" name="X2"></td>
+                        <td> <input type="number" name="Y2"></td>
+                        <td> <input type="number" name="Z2"></td>
+                    </tr>
+                    <tr>
+                        <td> 3.</td>
+                        <td> <input type="number" name="X3"></td>
+                        <td> <input type="number" name="Y3"></td>
+                        <td> <input type="number" name="Z3"></td>
+                    </tr>
+                    <tr>
+                        <td> 4.</td>
+                        <td> <input type="number" name="X4"></td>
+                        <td> <input type="number" name="Y4"></td>
+                        <td> <input type="number" name="Z4"></td>
+                    </tr>
+                    <tr>
+                        <td> 5.</td>
+                        <td> <input type="number" name="X5"></td>
+                        <td> <input type="number" name="Y5"></td>
+                        <td> <input type="number" name="Z5"></td>
+                    </tr>
+                    <tr>
+                        <td> 6.</td>
+                        <td> <input type="number" name="X6"></td>
+                        <td> <input type="number" name="Y6"></td>
+                        <td> <input type="number" name="Z6"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="action-buttons">
+                <button type="submit" name="file-save">Save file</button>
+                <button type="submit" name="file-run">Run</button>
+            </div>
+        </form>
+    </body>
+    <style>
+        body{
+    background-color: white;
+    display: grid;
+    /* font-family: 'Jost', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quicksand';
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    background-color: blue;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.file-path{
+    margin-top: 70px;
+    background-color: blue;
+    padding: 20px;
+    font-size: medium;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+
+.file-path input{
+    font-family: 'Quicksand';
+}
+
+.file-path button{
+    font-family: 'Quicksand';
+    width: 80px;
+    margin: 5px;
+}
+
+.coordinate-input-table{
+    text-align: center;
+    background-color: black;
+    margin-top: 30px;
+    font-size: small;
+    color: white;
+    border-radius: 10px;
+}
+
+.coordinate-input-table th{
+    color: white;
+    border: 2px solid black;
+    background-color: grey;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.coordinate-input-table td{
+    background-color: lightgray;
+    /* border-radius: 10px; */
+    border-radius: 0px 0px 10px 10px;
+}
+
+.coordinate-input-table input{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.action-buttons{
+    display: inline;
+}
+
+.action-buttons button{
+    font-family: 'Quicksand';
+    margin-top: 30px;
+    margin-right: 70px;
+    padding: 10px;
+    width: 100px;
+    background-color: blueviolet;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: azure;
+}
+
+
+    </style>
+</html>

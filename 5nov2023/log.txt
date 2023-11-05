@@ -1,0 +1,14 @@
+2023-11-05 13:20:16 [info     / 144kB] > starting web server on port 80
+2023-11-05 13:20:17 [info     / 130kB] > POST /Auto (301 Moved Permanently) [231ms]
+2023-11-05 13:20:18 [info     / 124kB] > GET /auto.html (404 Not Found) [218ms]
+2023-11-05 13:21:03 [info     / 148kB] Pico has already been connected
+2023-11-05 13:21:03 [info     / 146kB] 192.168.195.126
+2023-11-05 13:21:03 [info     / 143kB] Server started
+2023-11-05 13:21:03 [info     / 155kB] > starting web server on port 80
+2023-11-05 13:21:05 [info     / 142kB] > POST /Auto (200 OK) [41ms]
+2023-11-05 13:21:07 [info     / 133kB] > POST /Auto (200 OK) [40ms]
+2023-11-05 13:21:10 [info     / 124kB] > POST /Auto (200 OK) [154ms]
+2023-11-05 13:21:11 [info     / 115kB] > POST /Auto (200 OK) [178ms]
+2023-11-05 13:21:12 [info     / 141kB] > POST /Auto (200 OK) [257ms]
+2023-11-05 13:21:13 [info     / 132kB] > POST /Auto (200 OK) [282ms]
+2023-11-05 13:21:14 [info     / 123kB] > POST /Auto (200 OK) [40ms]
