@@ -50,7 +50,7 @@ def login(request):
             return "Wrong cridentials", 404
 
 @server.route("/mode",["POST","GET"])
-def login(request):
+def mode(request):
     print(f"Request path :"+request.uri)
 #     print(response)
     return render_template("mode.html", platform_username = username)
