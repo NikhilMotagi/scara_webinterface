@@ -13,12 +13,12 @@
         <i>A Scara that does something more</i>
     </div>
     <div class="menu">
-        <h1>Welcome !</h1>       
+        <h3>Welcome ! {{platform_username}}</h3>       
                 
         <div class="menu-button">
-            Modes:
-                <button id = "AutoButton" type = "button">Auto Mode</button>
-                <button id = "ManualButton" type = "button">Manual Mode</button>
+            <div class="mode-title"><b>Modes:</b></div>
+                <button id = "AutoButton">Auto Mode</button>
+                <button id = "ManualButton">Manual Mode</button>
         </div>
     </div>
 </body>
@@ -26,15 +26,10 @@
     var Manual = document.getElementById("ManualButton")
     var Auto = document.getElementById("AutoButton")
     Manual.onclick = function(){
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET","/manual?",true);
-        xhr.send();
-        
+        window.location.href="/Manual";
     }
     Auto.onclick = function(){
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET","/Auto?",true);
-        xhr.send();
+        window.location.href="/Auto";
     }
 </script>
 <style>

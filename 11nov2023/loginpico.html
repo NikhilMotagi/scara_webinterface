@@ -1,0 +1,109 @@
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Handy Thing</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1><b>Handy Thing</b></h1>
+            <i>A Scara that does something more</i>
+        </div>
+
+        <form METHOD = "POST">
+                <input type="text" name="text" placeholder="Username" required="" value="user1">
+                <input type="password" name="pswd" placeholder="Password" required="" value="1234">
+                <button type="submit">Login</button>
+        </form>
+        <div class = "footer">
+            <b>Final Year project by</b><br>
+            <table>
+                <tr>Nikhil Motagi  </tr>
+                <tr>  |  Sarthak Gupta  </tr>
+                <tr>  |  Vedant Dashmuke</tr>
+            </table>
+        </div>
+    </body>
+    <style>
+    body{
+    background-color: white;
+    display: grid;
+    /* font-family: 'Jost', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quicksand';
+}
+
+form{
+    margin: auto;
+    display: block;
+    background-color: whitesmoke;
+    /* outline: 10px solid red; */
+     margin-top: 10rem;
+    margin-left: 20%;
+    margin-right: 20%; 
+    padding: 1rem;
+    height: 15rem;
+    width: 50%;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+.header{
+    /* font-family: Papyrus; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 0.5rem;
+    background-color: rgb(5, 57, 168);
+    font-size: small;
+}
+
+.header h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+input{
+    font-family: 'Quicksand';
+    display: block;
+    padding: 20px;
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button{
+    font-family: 'Quicksand';
+    font-size: medium;
+    display:block;
+    width: 40%;
+    margin-top: 8px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(86, 131, 227);
+    color: white;
+    text-align: center;
+}
+
+button :hover{
+    background-color: rgb(46, 91, 189); 
+}
+
+.footer{
+    font-size: small;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(5, 57, 168);
+    color: white;
+    text-align: center;
+    padding: 1.5%;
+}
+    </style>
+</html>
+
